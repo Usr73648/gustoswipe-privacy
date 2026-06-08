@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Gusto Swipe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #2D6A4F;
+      --green-light: #52b788;
+      --ink: #1a1d1b;
+      --muted: #6b7280;
+      --bg: #f9f7f4;
+      --card: #ffffff;
+      --border: rgba(45,106,79,0.12);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    header {
+      background: var(--green);
+      padding: 48px 24px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -40px;
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .logo-icon {
+      width: 44px; height: 44px;
+      background: white;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+    }
+
+    .logo-text {
+      font-family: 'DM Serif Display', serif;
+      font-size: 26px;
+      color: white;
+      letter-spacing: -0.3px;
+    }
+
+    .logo-text span { color: #95d5b2; }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(28px, 5vw, 42px);
+      color: white;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: rgba(255,255,255,0.7);
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .intro-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 40px;
+      border-left: 4px solid var(--green);
+    }
+
+    .intro-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .intro-card strong {
+      color: var(--green);
+    }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-number {
+      width: 32px; height: 32px;
+      background: var(--green);
+      color: white;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 500;
+      flex-shrink: 0;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--ink);
+    }
+
+    p { margin-bottom: 12px; color: #374151; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0;
+    }
+
+    ul li {
+      padding: 8px 0 8px 24px;
+      position: relative;
+      color: #374151;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+      font-size: 15px;
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--green-light);
+      font-size: 14px;
+    }
+
+    .highlight-box {
+      background: rgba(45,106,79,0.06);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+      color: #374151;
+    }
+
+    .highlight-box strong {
+      color: var(--green);
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .contact-card {
+      background: var(--green);
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .contact-card h3 {
+      font-family: 'DM Serif Display', serif;
+      color: white;
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    .contact-card a {
+      display: inline-block;
+      background: white;
+      color: var(--green);
+      padding: 12px 28px;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 32px 16px 60px; }
+      header { padding: 36px 16px 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">🍽️</div>
+    <div class="logo-text">Gusto<span>Swipe</span></div>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: June 2026</p>
+</header>
+
+<div class="container">
+
+  <div class="intro-card">
+    <p>At <strong>Gusto Swipe</strong>, your privacy matters. This policy explains what data we collect, how we use it, and your rights. We keep things simple — we collect only what we need to make the app work.</p>
+  </div>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">1</div>
+      <h2>Information We Collect</h2>
+    </div>
+    <p>We collect the following information when you use Gusto Swipe:</p>
+    <ul>
+      <li><strong>Account data:</strong> email address, display name, and date of birth when you register</li>
+      <li><strong>Profile photo:</strong> if you choose to upload one</li>
+      <li><strong>Location data:</strong> your approximate location to find nearby restaurants (only while using the app)</li>
+      <li><strong>Saved restaurants:</strong> restaurants you swipe right on, favourite, or mark as visited</li>
+      <li><strong>Preferences:</strong> cuisine preferences, dietary requirements, search radius, and price range</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">2</div>
+      <h2>How We Use Your Information</h2>
+    </div>
+    <ul>
+      <li>To show you relevant restaurants near your location</li>
+      <li>To save your favourites and visited places across devices</li>
+      <li>To personalise your discovery experience based on your preferences</li>
+      <li>To maintain your account and authenticate you securely</li>
+    </ul>
+    <div class="highlight-box">
+      <strong>We never sell your data</strong>
+      Your personal information is never sold, rented, or shared with advertisers or third-party marketers.
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">3</div>
+      <h2>Third-Party Services</h2>
+    </div>
+    <p>Gusto Swipe uses the following third-party services to function:</p>
+    <ul>
+      <li><strong>Google Places API</strong> — to fetch restaurant data and photos. Google's privacy policy applies to this data.</li>
+      <li><strong>Supabase</strong> — for secure account authentication and cloud storage of your saved restaurants and profile data.</li>
+      <li><strong>Google Sign-In</strong> — optional login method. Only your name and email are shared with us.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">4</div>
+      <h2>Location Data</h2>
+    </div>
+    <p>We request access to your device location only to find restaurants near you. Location is used in real-time while the app is open and is never stored on our servers. You can use Passport Mode to search any city without sharing your real location.</p>
+    <div class="highlight-box">
+      <strong>Your control</strong>
+      You can revoke location access at any time in your iPhone Settings → Gusto Swipe → Location.
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">5</div>
+      <h2>Data Storage & Security</h2>
+    </div>
+    <p>Your account data and saved restaurants are stored securely on Supabase servers with row-level security enabled. Profile photos are stored in a private storage bucket accessible only to you. We use industry-standard encryption for all data in transit.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">6</div>
+      <h2>Data Retention & Deletion</h2>
+    </div>
+    <p>You can delete your account and all associated data at any time by contacting us at the email below. When you sign out, all locally cached data including your profile photo is immediately deleted from your device.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">7</div>
+      <h2>Children's Privacy</h2>
+    </div>
+    <p>Gusto Swipe is not directed at children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, please contact us immediately.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">8</div>
+      <h2>Your Rights</h2>
+    </div>
+    <p>Depending on your location, you may have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your data</li>
+      <li>Object to or restrict processing of your data</li>
+      <li>Data portability — receive your data in a machine-readable format</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at the email address below.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">9</div>
+      <h2>Changes to This Policy</h2>
+    </div>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <div class="contact-card">
+    <h3>Questions or concerns?</h3>
+    <p>We're happy to help with any privacy-related questions.</p>
+    <a href="mailto:gusto.swipe@gmail.com">gusto.swipe@gmail.com</a>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Gusto Swipe. All rights reserved.
+</footer>
+
+</body>
+</html>
