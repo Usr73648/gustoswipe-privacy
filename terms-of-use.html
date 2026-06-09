@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use — Gusto Swipe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #2D6A4F;
+      --green-light: #52b788;
+      --ink: #1a1d1b;
+      --muted: #6b7280;
+      --bg: #f9f7f4;
+      --card: #ffffff;
+      --border: rgba(45,106,79,0.12);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    header {
+      background: var(--green);
+      padding: 48px 24px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -40px;
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .logo-icon {
+      width: 44px; height: 44px;
+      background: white;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+    }
+
+    .logo-text {
+      font-family: 'DM Serif Display', serif;
+      font-size: 26px;
+      color: white;
+      letter-spacing: -0.3px;
+    }
+
+    .logo-text span { color: #95d5b2; }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(28px, 5vw, 42px);
+      color: white;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: rgba(255,255,255,0.7);
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .intro-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 40px;
+      border-left: 4px solid var(--green);
+    }
+
+    .intro-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .intro-card strong {
+      color: var(--green);
+    }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-number {
+      width: 32px; height: 32px;
+      background: var(--green);
+      color: white;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 500;
+      flex-shrink: 0;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--ink);
+    }
+
+    p { margin-bottom: 12px; color: #374151; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0;
+    }
+
+    ul li {
+      padding: 8px 0 8px 24px;
+      position: relative;
+      color: #374151;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+      font-size: 15px;
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--green-light);
+      font-size: 14px;
+    }
+
+    .highlight-box {
+      background: rgba(45,106,79,0.06);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+      color: #374151;
+    }
+
+    .highlight-box strong {
+      color: var(--green);
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .warning-box {
+      background: rgba(255, 77, 79, 0.06);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+      color: #374151;
+      border-left: 3px solid #FF4D4F;
+    }
+
+    .warning-box strong {
+      color: #FF4D4F;
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .contact-card {
+      background: var(--green);
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .contact-card h3 {
+      font-family: 'DM Serif Display', serif;
+      color: white;
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    .contact-card a {
+      display: inline-block;
+      background: white;
+      color: var(--green);
+      padding: 12px 28px;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      margin: 0 12px;
+      font-size: 14px;
+      color: var(--green);
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 32px 16px 60px; }
+      header { padding: 36px 16px 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">🍽️</div>
+    <div class="logo-text">Gusto<span>Swipe</span></div>
+  </div>
+  <h1>Terms of Use</h1>
+  <p>Last updated: June 2026</p>
+</header>
+
+<div class="container">
+
+  <div class="nav-links">
+    <a href="index.html">← Privacy Policy</a>
+  </div>
+
+  <div class="intro-card">
+    <p>By downloading or using <strong>Gusto Swipe</strong>, you agree to these Terms of Use. Please read them carefully. If you do not agree, do not use the app.</p>
+  </div>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">1</div>
+      <h2>Acceptance of Terms</h2>
+    </div>
+    <p>These Terms of Use ("Terms") govern your use of the Gusto Swipe mobile application ("App") operated by Peter Acel ("we", "us", or "our"). By accessing or using the App, you confirm that you are at least 13 years of age and agree to be bound by these Terms.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">2</div>
+      <h2>Use of the App</h2>
+    </div>
+    <p>Gusto Swipe is a restaurant discovery app that helps you find nearby restaurants using location data and Google Places. You may use the App for personal, non-commercial purposes only.</p>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use the App for any unlawful purpose</li>
+      <li>Attempt to reverse engineer, modify, or create derivative works of the App</li>
+      <li>Use automated tools to access or scrape data from the App</li>
+      <li>Attempt to gain unauthorized access to any systems or networks</li>
+      <li>Upload content that is harmful, offensive, or violates any applicable law</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">3</div>
+      <h2>User Accounts</h2>
+    </div>
+    <p>You may create an account using your email address or Google Sign-In. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</p>
+    <div class="highlight-box">
+      <strong>Your responsibility</strong>
+      Notify us immediately at gusto.swipe@gmail.com if you suspect unauthorized use of your account.
+    </div>
+    <p>We reserve the right to terminate accounts that violate these Terms or that have been inactive for an extended period.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">4</div>
+      <h2>Restaurant Data</h2>
+    </div>
+    <p>Restaurant information displayed in Gusto Swipe is sourced from Google Places API. We do not guarantee the accuracy, completeness, or timeliness of this data. Opening hours, ratings, photos, and other details may not reflect current conditions.</p>
+    <p>Gusto Swipe is not affiliated with, endorsed by, or sponsored by any restaurant or food establishment displayed in the App.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">5</div>
+      <h2>Intellectual Property</h2>
+    </div>
+    <p>The Gusto Swipe name, logo, design, and all original content within the App are the property of Peter Acel and are protected by applicable intellectual property laws. You may not use our branding or content without prior written permission.</p>
+    <p>Restaurant photos and data are provided by Google Places API and remain the property of their respective owners.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">6</div>
+      <h2>Premium Features & Payments</h2>
+    </div>
+    <p>Gusto Swipe offers a free tier and may offer premium subscription features ("Gusto Swipe Premium"). Premium features are billed through Apple's App Store using In-App Purchases.</p>
+    <ul>
+      <li>All purchases are processed by Apple and subject to Apple's terms</li>
+      <li>Subscriptions auto-renew unless cancelled at least 24 hours before the renewal date</li>
+      <li>You can manage or cancel subscriptions in your iPhone Settings → Apple ID → Subscriptions</li>
+      <li>Refunds are handled by Apple — contact Apple Support for refund requests</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">7</div>
+      <h2>Location Services</h2>
+    </div>
+    <p>The App uses your device's location to find nearby restaurants. Location access is optional — you can use Passport Mode to search any city without sharing your real location. You can revoke location access at any time in your device settings.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">8</div>
+      <h2>Disclaimer of Warranties</h2>
+    </div>
+    <div class="warning-box">
+      <strong>Important</strong>
+      The App is provided "as is" without warranties of any kind, express or implied.
+    </div>
+    <p>We do not warrant that the App will be uninterrupted, error-free, or free of viruses. We are not responsible for any decisions made based on restaurant information displayed in the App, including food allergies, dietary requirements, or health-related decisions.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">9</div>
+      <h2>Limitation of Liability</h2>
+    </div>
+    <p>To the maximum extent permitted by law, Peter Acel shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App, including but not limited to loss of data, loss of profits, or personal injury.</p>
+    <p>Our total liability to you for any claims arising from your use of the App shall not exceed the amount you paid for the App or any in-app purchases in the 12 months preceding the claim.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">10</div>
+      <h2>Third-Party Services</h2>
+    </div>
+    <p>The App integrates with the following third-party services, each governed by their own terms:</p>
+    <ul>
+      <li><strong>Google Places API</strong> — <a href="https://policies.google.com/terms" target="_blank">Google Terms of Service</a></li>
+      <li><strong>Supabase</strong> — <a href="https://supabase.com/terms" target="_blank">Supabase Terms of Service</a></li>
+      <li><strong>Google Sign-In</strong> — <a href="https://policies.google.com/terms" target="_blank">Google Terms of Service</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">11</div>
+      <h2>Termination</h2>
+    </div>
+    <p>We reserve the right to suspend or terminate your access to the App at any time, with or without notice, for conduct that violates these Terms or is otherwise harmful to other users, us, or third parties.</p>
+    <p>You may delete your account at any time by contacting us at the email below.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">12</div>
+      <h2>Governing Law</h2>
+    </div>
+    <p>These Terms are governed by and construed in accordance with the laws of Austria. Any disputes arising from these Terms or your use of the App shall be subject to the exclusive jurisdiction of the courts of Austria.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-number">13</div>
+      <h2>Changes to These Terms</h2>
+    </div>
+    <p>We may update these Terms from time to time. We will notify you of significant changes by updating the date at the top of this page. Continued use of the App after changes constitutes acceptance of the updated Terms.</p>
+  </section>
+
+  <div class="contact-card">
+    <h3>Questions about these Terms?</h3>
+    <p>We're happy to clarify anything.</p>
+    <a href="mailto:gusto.swipe@gmail.com">gusto.swipe@gmail.com</a>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Gusto Swipe · <a href="index.html">Privacy Policy</a> · Terms of Use
+</footer>
+
+</body>
+</html>
